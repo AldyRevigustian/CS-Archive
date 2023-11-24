@@ -17,26 +17,16 @@ int main()
     }
 
     int count = 0;
-    int temp = 0;
 
     for (int k = 0; k < N; k++)
     {
-      int count2 = 0;
-
-      for (int l = 0; l < M; l++)
+      if (M / H[k] > count)
       {
-        temp = temp + H[k];
-        if (temp <= M)
-        {
-          printf("Perulangan si %d : %d\n", H[k], temp);
-          count2++;
-        }
+        count = M / H[k];
       }
-
-      // printf("Count %d: %d\n", k, count2);
     }
 
-    // printf("Case #%d: %d\n", i, count);
+    printf("Case #%d: %d\n", i, count);
   }
 
   return 0;
