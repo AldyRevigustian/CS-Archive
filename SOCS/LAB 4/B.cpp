@@ -8,7 +8,7 @@ int main() {
 
     for (int t = 0; t < T; t++) {
         int N, M, K;
-        scanf("%d %d %d", &N, &M, &K);
+        scanf("%d %d %d", &N, &M, &K);  
 
         int porsi[N];
         for (int i = 0; i < N; i++) {
