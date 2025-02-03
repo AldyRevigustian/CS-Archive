@@ -11,7 +11,6 @@ int partition(int arr[], int low, int high)
 {
   int pivot = arr[high];
   int i = low - 1;
-
   for (int j = low; j < high; j++)
   {
     if (arr[j] < pivot)
@@ -35,11 +34,11 @@ void quicksort(int arr[], int low, int high)
   }
 }
 
-int binarySearch(int arr[], int low, int high, int target)
+int binarysearch(int arr[], int low, int high, int target)
 {
   while (low <= high)
   {
-    int mid = low + (mid - low) / 2;
+    int mid = low + (high - low) / 2;
 
     if (arr[mid] == target)
     {
@@ -55,23 +54,39 @@ int binarySearch(int arr[], int low, int high, int target)
       high = mid - 1;
     }
   }
-
   return -1;
 }
 
 int main()
 {
-  int arr[10] = {10, 8, 9, 7, 6, 5, 3, 4, 2, 1};
+  FILE *fp = fopen("data.rand", "r");
+  int arr[1001];
+  int i = 0;
 
-  quicksort(arr, 0, 9);
+  while (fscanf(fp, "%d", &arr[i]) ==  1)
+  {
+    i++;
+  }
 
-  for (int i = 0; i < 10; i++)
+  int size = i;
+
+  printf("Sebelum Sort\n");
+  for (int i = 0; i < size; i++)
   {
     printf("%d ", arr[i]);
   }
-  
 
-  printf("\n%d", binarySearch(arr, 0, 9, 5));
+  printf("\nSetelah Sort\n");
+  quicksort(arr, 0, size - 1);
+
+  for (int i = 0; i < size; i++)
+  {
+    printf("%d ", arr[i]);
+  }
+  int target;
+  printf("\nMasukan angka yang di cari : ");
+  scanf("%d", &target);
+  printf("ke - %d", binarysearch(arr, 0, size - 1, target));
 
   return 0;
 }

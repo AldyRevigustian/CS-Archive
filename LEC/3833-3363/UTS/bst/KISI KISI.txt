@@ -1,0 +1,55 @@
+Coding No. 1
+Dikasih Line 1 N sama Q dimana N adalah jumlah integer dalam bst dan Q adalah jumlah query yang akan dicari. 
+Line 2 integer yang dimasukin ke bst sesuai jumlah N seterusnya query sesuai jumlah Q. 
+Query yang ditanya akan dicocokkan dengan integer yang ada di bst apabila ada yang cocok akan dihapus. 
+Terus diulang sampai query abis. 
+Output yang diminta adalah nilai integer maksimal yang masih ada dalam bst apabila sudah tidak ada integer dalam bst output =-1
+
+
+Coding No. 2 
+Line 1 ada M sama N dimana M merupakan isi double linked list 1 dan N isi double linked list 2 ujung"nya lu harus gabungin dll1 ama dll2 dengan kepala dll2 di posisi tail dll1. Setelah penggabungan dll2 bakal kosong. 
+
+
+Esai No. 1
+Pointer dalam c itu apa
+
+Pointer adalah sebuah variabel yang menyimpan alamat memori dari variabel lain. 
+Dengan kata lain, pointer "menunjuk" ke lokasi memori dari suatu nilai tertentu.
+
+Array dalam C itu apa
+Variable yang dapat menampung kumpulan nilai dengan tipe data yang sama dalam urutan yang terindex dari 0
+
+
+Esai No. 2
+Infix sama prefix
+
+Esai No. 3
+Dikasi 2 algoritma hashing 
+Algoritma a alfabet sesuai ordinal dan ditambahkan
+Ex. ABC
+=1+2+3=7
+
+Algoritma b alfabet sesuai ordinal kemudian dikalikan posisi
+Ex. ABC
+=1*1 + 2*2 +3*3 =14
+a. Collision di algoritma a
+b. Collision di algoritma b
+c. Algoritma mana yg lebih efektif dalam menghindari collision
+
+
+Postfix (Operator Di Belakang) = Di Convert Dari Awal, Di Evaluate dari Awal
+Prefix (Operator Di Depan) = Di Convert Dari Belakang, Di Evaluate dari Belakang
+
+Convert
+String / Input | Stack | Prefix / Postfix
+
+Evaluate
+String / Input | Stack | Operation
+
+Hash Table 
+Index | Value | Step
+
+Misal Size Table 100 maka dikurang 1 jadi 99 
+
+Divider = Modulo
+Fold = Ditekuk 
